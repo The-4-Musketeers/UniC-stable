@@ -1,4 +1,5 @@
 # UniC
+## _Feel at Home, Away from Home_
 Applying to colleges is a huge pain for students all over the world, and especially when they are applying to college abroad. Our app UniC, which stands for University Connect, helps to fix this through a variety of features.
 
 ## Problem and Solution
