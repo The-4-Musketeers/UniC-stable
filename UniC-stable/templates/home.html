@@ -1,0 +1,80 @@
+{% extends "layout.html" %} 
+
+{% block title %} 
+    Home
+{% endblock %}
+
+{% block body %}
+    <div class='banner'>
+        <img src='static/img/banner2.png' alt="homepageimg">
+    </div>
+
+    <div class="fancybutton normal" style="left: 2vw">
+        <div class="button premium">
+            <span class="button__mask" style="background: gold;"></span>
+            <span class="button__text">Premium</span>
+            <span class="button__text button__text--bis">Premium</span>
+        </div>
+    </div>
+
+    {% if not logged_in %} 
+
+        <div class="fancybutton normal" style="right: 2vw;">
+            <div class="button" onclick="location.href='/login'">
+                <span class="button__mask"></span>
+                <span class="button__text">Sign In</span>
+                <span class="button__text button__text--bis">Sign In</span>
+            </div>
+        </div>
+
+        <div class="fancybutton normal" style="right: 180px;">
+            <div class="button" onclick="location.href='/login'">
+                <span class="button__mask"></span>
+                <span class="button__text">Sign Up</span>
+                <span class="button__text button__text--bis">Sign Up</span>
+            </div>
+        </div>
+
+    {% else %}
+
+        <div class="fancybutton normal" style="right: 404px;">
+            <div class="button" onclick="location.href='/uni_shop'">
+                <span class="button__mask"></span>
+                <span class="button__text">Shop</span>
+                <span class="button__text button__text--bis">Shop</span>
+            </div>
+        </div>
+
+        <div class="fancybutton normal" style="right: 198px;">
+            <div class="button" onclick="location.href='/mentor/search'">
+                <span class="button__mask"></span>
+                <span class="button__text">Mentorships</span>
+                <span class="button__text button__text--bis">Mentorships</span>
+            </div>
+        </div>
+
+        <div class="fancybutton normal" style="right: 2vw">
+            <div class="button" onclick="location.href='/account'">
+                <span class="button__mask"></span>
+                <span class="button__text">Account</span>
+                <span class="button__text button__text--bis">Account</span>
+            </div>
+        </div>
+
+    {% endif %}
+
+    <br><br>
+    <div class='text'>
+        <p>Are you studying abroad and feeling lonely? <b>Meet up</b> with some fellow students!</p>
+        <p>Are you living or studying abroad and would like to help? Help a fellow student <b>feel at home!</b></p>
+        <p>We, at <span style="color: #529bf5;">Uni</span><span style="color:#82b1ea;">C</span> help students studying abroad <b>connect</b> with each other and <b>feel at home!</b></p>
+    </div>
+
+    <div class="fancybutton center">
+        <div class="button" onclick="location.href='/about'">
+            <span class="button__mask"></span>
+            <span class="button__text">About Us</span>
+            <span class="button__text button__text--bis">About Us</span>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+@media screen and (max-width: 620px) {
+    #bigscreenbuttons {
+        display: none;
+    }
+    #smallscreenbuttons {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    #bigscreenbuttons {
+        display: inline;
+    }
+    #smallscreenbuttons {
+        display: none;
+    }
+}
