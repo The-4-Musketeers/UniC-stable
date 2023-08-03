@@ -16,7 +16,7 @@ from helpers import connect_to_db, write_to_db, read_from_db, login_required
 
 # set up application secret key, config and csrf protection
 app = Flask(__name__)
-app.secret_key = '5yTuleqqRRdRwvCf'
+app.secret_key = 'your secret key goes here'
 app.config.from_object("config")
 @app.after_request
 def after_request(response):
@@ -28,7 +28,7 @@ def after_request(response):
 
 # add csrf and geoip service
 csrf = CSRFProtect(app)
-app.config.update(GEOIPIFY_API_KEY='at_KIgYTxO7GSB26ukH0av9aCEC2IUCQ')
+app.config.update(GEOIPIFY_API_KEY='set up the geoIP key and put it here')
 simple_geoip = SimpleGeoIP(app)
 
 
