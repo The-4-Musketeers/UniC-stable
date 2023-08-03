@@ -34,6 +34,6 @@ Our app will help provide cheaper services to students, solving the problems of 
 1. Clone the repository(or download the zip file) and open up your editor+terminal of choice.
 2. `cd` into the directory.
 3. Install the required modules(as listed in requirements.txt).
-4. Run writer.py to create the required database file and tables.
+4. Run `writer.py` (with the command `python writer.py`) to create the required database file and tables.
 5. Under the directory /static/img, create another folder called "listings".
 6. Set up and run the Flask application by running `flask run`.
