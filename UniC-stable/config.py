@@ -1,8 +1,8 @@
 from tempfile import mkdtemp
 
 
-GOOGLE_CLIENT_ID = "560689788667-2or0hcftq62kvr8qhik62pjl0lhlatqi.apps.googleusercontent.com"
-GOOGLE_CLIENT_SECRET = "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"
+# GOOGLE_CLIENT_ID = "get your Google OAuth client ID from the Google developer console and put it here"
+# GOOGLE_CLIENT_SECRET = "get your client secret key from the Google developer console and put it here"
 SESSION_FILE_DIR = mkdtemp()
 SESSION_PERMANENT = False
 SESSION_TYPE = "filesystem"
