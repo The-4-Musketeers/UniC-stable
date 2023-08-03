@@ -36,4 +36,6 @@ Our app will help provide cheaper services to students, solving the problems of 
 3. Install the required modules(as listed in requirements.txt).
 4. Run `writer.py` (with the command `python writer.py`) to create the required database file and tables.
 5. Under the directory /static/img, create another folder called "listings".
-6. Set up and run the Flask application by running `flask run`.
+6. Set up a Google OAuth verification client on the [Google Developer Console](https://console.cloud.google.com/) to get your client secret and client ID, which you will need to update in `config.py`
+7. Update `app.py` with a secret key and a GeoIP API key. You can generate these using an online secret key generator like [RandomKeyGen](https://randomkeygen.com/)
+8. Set up and run the Flask application by running `flask run`.
